@@ -10,6 +10,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context){
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.red,
         visualDensity: VisualDensity.adaptivePlatformDensity,
@@ -33,7 +34,7 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text('SMK TELKOM PURWOKERTO'),
       ),
       body: Center(
-        child: Text('Ulza Ganteng'),
+        child: Text(''),
       ),
     );
   }
