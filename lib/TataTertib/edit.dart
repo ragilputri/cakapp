@@ -29,6 +29,7 @@ class _tata_tertib_editState extends State<tata_tertib_edit> {
                         borderRadius: new BorderRadius.circular(5.0)
                     )
                 ),
+                onChanged: (value){},
               ),
               new Padding(padding: new EdgeInsets.only(top: 20.0),),
               new TextField(
@@ -39,6 +40,7 @@ class _tata_tertib_editState extends State<tata_tertib_edit> {
                         borderRadius: new BorderRadius.circular(5.0)
                     )
                 ),
+                onChanged: (value){},
               ),
 
               new Padding(padding: new EdgeInsets.only(top: 20.0),),
@@ -58,14 +60,14 @@ class _tata_tertib_editState extends State<tata_tertib_edit> {
                 children: [
                   new MaterialButton(
                     onPressed: (){
-                      Navigator.push(context, MaterialPageRoute(builder: (context) => tata_tertib() ));
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => index_tata_tertib() ));
                     }, child: Text("Back To List"),
                     color: Colors.orange,
                     textColor: Colors.white,
                   ),
                   new MaterialButton(
                     onPressed: (){
-                      Navigator.push(context, MaterialPageRoute(builder: (context) => tata_tertib() ));
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => index_tata_tertib() ));
                     }, child: Text("Save"),
                     color: Colors.red,
                     textColor: Colors.white,

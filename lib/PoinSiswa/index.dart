@@ -22,7 +22,7 @@ class _poin_siswaState extends State<poin_siswa> {
           children: <Widget>[
           Container(
               margin: EdgeInsets.all(20),
-              child: Text("DATA POIN SISWA"),
+              child: Text("DATA POIN SISWA", style: TextStyle(fontSize:20 ),),
             ),
           new MaterialButton(
             onPressed: (){
@@ -73,7 +73,7 @@ class _poin_siswaState extends State<poin_siswa> {
                           DataCell(Row(
                               children: <Widget>[
                                 IconButton(
-                                  icon: Icon(Icons.search),
+                                  icon: Icon(Icons.remove_red_eye),
                                   color: Colors.grey,
                                   tooltip: 'detail',
                                   onPressed: () {
@@ -94,7 +94,7 @@ class _poin_siswaState extends State<poin_siswa> {
                           DataCell(Row(
                               children: <Widget>[
                                 IconButton(
-                                  icon: Icon(Icons.search),
+                                  icon: Icon(Icons.remove_red_eye),
                                   color: Colors.grey,
                                   tooltip: 'detail',
                                   onPressed: () {
@@ -115,7 +115,7 @@ class _poin_siswaState extends State<poin_siswa> {
                           DataCell(Row(
                               children: <Widget>[
                                 IconButton(
-                                  icon: Icon(Icons.search),
+                                  icon: Icon(Icons.remove_red_eye),
                                   color: Colors.grey,
                                   tooltip: 'detail',
                                   onPressed: () {

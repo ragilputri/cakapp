@@ -158,7 +158,7 @@ class _poin_siswa_detailState extends State<poin_siswa_detail> {
                                 },
                               ),
                               IconButton(
-                                icon: Icon(Icons.search),
+                                icon: Icon(Icons.remove_red_eye),
                                 color: Colors.grey,
                                 tooltip: 'detail',
                                 onPressed: () {
@@ -195,7 +195,7 @@ class _poin_siswa_detailState extends State<poin_siswa_detail> {
                                 },
                               ),
                               IconButton(
-                                icon: Icon(Icons.search),
+                                icon: Icon(Icons.remove_red_eye),
                                 color: Colors.grey,
                                 tooltip: 'detail',
                                 onPressed: () {

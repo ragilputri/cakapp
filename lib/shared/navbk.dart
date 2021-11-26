@@ -16,7 +16,7 @@ class NavBar extends StatelessWidget {
       child: ListView(
         padding: EdgeInsets.zero,
         children: <Widget> [
-          UserAccountsDrawerHeader(accountName: Text("Ulza Paramarta"), accountEmail:Text("3103119190@student.smktelkom-pwt.sch.id") ),
+          UserAccountsDrawerHeader(accountName: Text("Enigma Team"), accountEmail:Text("33333333333@student.smktelkom-pwt.sch.id") ),
           ListTile(
             leading: Icon(Icons.home),
             title: Text('Home'),
@@ -35,7 +35,7 @@ class NavBar extends StatelessWidget {
             leading: Icon(Icons.rule_sharp),
             title: Text('Tata Tertib'),
             onTap: (){
-              Navigator.push(context, MaterialPageRoute(builder: (context) => tata_tertib() ));
+              Navigator.push(context, MaterialPageRoute(builder: (context) => index_tata_tertib() ));
             },
           ),
           ListTile(

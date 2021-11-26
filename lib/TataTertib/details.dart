@@ -107,7 +107,7 @@ class _tata_tertib_detailState extends State<tata_tertib_detail> {
           new Padding(padding: new EdgeInsets.only(top: 20.0),),
           new MaterialButton(
             onPressed: (){
-              Navigator.push(context, MaterialPageRoute(builder: (context) => tata_tertib() ));
+              Navigator.push(context, MaterialPageRoute(builder: (context) => index_tata_tertib() ));
             }, child: Text("Back To List"),
             color: Colors.orange,
             textColor: Colors.white,

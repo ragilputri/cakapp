@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "360092683490",
+    "project_id": "dbcakapp",
+    "storage_bucket": "dbcakapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:360092683490:android:02cc54de8dbc052750e2bb",
+        "android_client_info": {
+          "package_name": "com.example.cakapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "360092683490-m84rq6bm9cjk85e7sbjrba9778vao5c4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDMnH4Xy5w1NEvsHbLGErIOPJkBom04E-A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "360092683490-m84rq6bm9cjk85e7sbjrba9778vao5c4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

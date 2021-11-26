@@ -1,16 +1,17 @@
 import 'package:cakapp/TataTertib/create.dart';
 import 'package:cakapp/TataTertib/details.dart';
 import 'package:cakapp/TataTertib/edit.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:cakapp/shared/navbk.dart';
 
-class tata_tertib extends StatefulWidget {
+class index_tata_tertib extends StatefulWidget {
   @override
-  _tata_tertibState createState() => _tata_tertibState();
+  _index_tata_tertibState createState() => _index_tata_tertibState();
 }
 
-class _tata_tertibState extends State<tata_tertib> {
+class _index_tata_tertibState extends State<index_tata_tertib> {
   void showAlertDialog(){
     showDialog(builder: (context) => new AlertDialog(
       title: Text("Warning"),
@@ -37,11 +38,11 @@ class _tata_tertibState extends State<tata_tertib> {
         child: Column(children: <Widget>[
           Container(
             margin: EdgeInsets.all(20),
-            child: Text("DATA INDIKATOR"),
+            child: Text("DATA INDIKATOR", style: TextStyle(fontSize:20 ),),
           ),
           new MaterialButton(
             onPressed: (){
-              Navigator.push(context, MaterialPageRoute(builder: (context) => tata_tertib_create() ));
+              Navigator.of(context).push(MaterialPageRoute(builder: (context) => tata_tertib_create()));
             }, child: Text("New Indikator"),
             color: Colors.red,
             textColor: Colors.white,
@@ -88,32 +89,32 @@ class _tata_tertibState extends State<tata_tertib> {
                         DataCell(Text("10")),
                         DataCell(Text("Beriman, Bertaqwa Kepada Tuhan YME, dan Berakhlak Mulia")),
                         DataCell(Row(
-                          children: <Widget>[
-                            IconButton(
-                            icon: Icon(Icons.edit),
-                            color: Colors.grey,
-                            tooltip: 'edit',
-                            onPressed: () {
-                              Navigator.push(context, MaterialPageRoute(builder: (context) => tata_tertib_edit() ));
-                            },
-                             ),
-                            IconButton(
-                              icon: Icon(Icons.search),
-                              color: Colors.grey,
-                              tooltip: 'detail',
-                              onPressed: () {
-                                Navigator.push(context, MaterialPageRoute(builder: (context) => tata_tertib_detail() ));
-                              },
-                            ),
-                            IconButton(
-                              icon: Icon(Icons.delete),
-                              color: Colors.grey,
-                              tooltip: 'remove',
-                              onPressed: () {
-                                showAlertDialog();
-                              },
-                            ),
-                        ]
+                            children: <Widget>[
+                              IconButton(
+                                icon: Icon(Icons.edit),
+                                color: Colors.grey,
+                                tooltip: 'edit',
+                                onPressed: () {
+                                  Navigator.push(context, MaterialPageRoute(builder: (context) => tata_tertib_edit() ));
+                                },
+                              ),
+                              IconButton(
+                                icon: Icon(Icons.remove_red_eye),
+                                color: Colors.grey,
+                                tooltip: 'detail',
+                                onPressed: () {
+                                  Navigator.push(context, MaterialPageRoute(builder: (context) => tata_tertib_detail() ));
+                                },
+                              ),
+                              IconButton(
+                                icon: Icon(Icons.delete),
+                                color: Colors.grey,
+                                tooltip: 'remove',
+                                onPressed: () {
+                                  showAlertDialog();
+                                },
+                              ),
+                            ]
                         ),
                         ),
                       ],
@@ -135,7 +136,7 @@ class _tata_tertibState extends State<tata_tertib> {
                                 },
                               ),
                               IconButton(
-                                icon: Icon(Icons.search),
+                                icon: Icon(Icons.remove_red_eye),
                                 color: Colors.grey,
                                 tooltip: 'detail',
                                 onPressed: () {
@@ -172,7 +173,7 @@ class _tata_tertibState extends State<tata_tertib> {
                                 },
                               ),
                               IconButton(
-                                icon: Icon(Icons.search),
+                                icon: Icon(Icons.remove_red_eye),
                                 color: Colors.grey,
                                 tooltip: 'detail',
                                 onPressed: () {
@@ -209,7 +210,7 @@ class _tata_tertibState extends State<tata_tertib> {
                                 },
                               ),
                               IconButton(
-                                icon: Icon(Icons.search),
+                                icon: Icon(Icons.remove_red_eye),
                                 color: Colors.grey,
                                 tooltip: 'detail',
                                 onPressed: () {
