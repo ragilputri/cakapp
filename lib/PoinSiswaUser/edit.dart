@@ -1,15 +1,15 @@
-import 'package:cakapp/PoinSiswa/details.dart';
-import 'package:cakapp/PoinSiswa/index.dart';
+import 'package:cakapp/PoinSiswaUser/index.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:cakapp/shared/navbk.dart';
 import 'package:dropdown_search/dropdown_search.dart';
 
-class poin_siswa_edit extends StatefulWidget {
+class edit_poin extends StatefulWidget {
   @override
-  _poin_siswa_editState createState() => _poin_siswa_editState();
+  _edit_poinState createState() => _edit_poinState();
 }
 
-class _poin_siswa_editState extends State<poin_siswa_edit> {
+class _edit_poinState extends State<edit_poin> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -80,14 +80,14 @@ class _poin_siswa_editState extends State<poin_siswa_edit> {
                 children: [
                   new MaterialButton(
                     onPressed: (){
-                      //Navigator.push(context, MaterialPageRoute(builder: (context) => poin_siswa_detail() ));
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => PoinSiswaUser() ));
                     }, child: Text("Back To List"),
                     color: Colors.orange,
                     textColor: Colors.white,
                   ),
                   new MaterialButton(
                     onPressed: (){
-                      //Navigator.push(context, MaterialPageRoute(builder: (context) => poin_siswa_detail(id: storedocs[i]['id']) ));
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => PoinSiswaUser() ));
                     }, child: Text("Save"),
                     color: Colors.red,
                     textColor: Colors.white,

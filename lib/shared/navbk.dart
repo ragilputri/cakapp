@@ -1,8 +1,10 @@
 import 'package:cakapp/Pengumuman/index.dart';
+import 'package:cakapp/PoinSiswaUser/index.dart';
 import 'package:cakapp/TataTertib/index.dart';
 import 'package:cakapp/PoinSiswa/index.dart';
-import 'package:cakapp/NilaiKarakter/index.dart';
+import 'package:cakapp/PoinSiswaUser/index.dart';
 import 'package:cakapp/GuruBK/index.dart';
+import 'package:cakapp/TataTertibUser/index.dart';
 import 'package:cakapp/WaliKelas/index.dart';
 import 'package:cakapp/DataSiswa/index.dart';
 import 'package:cakapp/main.dart';
@@ -33,23 +35,30 @@ class NavBar extends StatelessWidget {
           ),
           ListTile(
             leading: Icon(Icons.rule_sharp),
-            title: Text('Tata Tertib'),
+            title: Text('Tata Tertib (admin)'),
             onTap: (){
               Navigator.push(context, MaterialPageRoute(builder: (context) => index_tata_tertib() ));
             },
           ),
           ListTile(
             leading: Icon(Icons.control_point),
-            title: Text('Poin Siswa'),
+            title: Text('Poin Siswa (admin)'),
             onTap: (){
               Navigator.push(context, MaterialPageRoute(builder: (context) => poin_siswa() ));
             },
           ),
           ListTile(
             leading: Icon(Icons.score),
-            title: Text('Nilai Karakter'),
+            title: Text('Tata Tertib (user)'),
             onTap: (){
-              Navigator.push(context, MaterialPageRoute(builder: (context) => nilai_karakter() ));
+              Navigator.push(context, MaterialPageRoute(builder: (context) => TataTertibUser() ));
+            },
+          ),
+          ListTile(
+            leading: Icon(Icons.whatshot_outlined),
+            title: Text('Poin Siswa (user)'),
+            onTap: (){
+              Navigator.push(context, MaterialPageRoute(builder: (context) => PoinSiswaUser() ));
             },
           ),
           ListTile(

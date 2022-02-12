@@ -1,33 +1,34 @@
 {
   "project_info": {
-    "project_number": "360092683490",
-    "project_id": "dbcakapp",
-    "storage_bucket": "dbcakapp.appspot.com"
+    "project_number": "877044322181",
+    "firebase_url": "https://cakapp-33048-default-rtdb.firebaseio.com",
+    "project_id": "cakapp-33048",
+    "storage_bucket": "cakapp-33048.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:360092683490:android:02cc54de8dbc052750e2bb",
+        "mobilesdk_app_id": "1:877044322181:android:7ff7c4713bf6f765857eec",
         "android_client_info": {
           "package_name": "com.example.cakapp"
         }
       },
       "oauth_client": [
         {
-          "client_id": "360092683490-m84rq6bm9cjk85e7sbjrba9778vao5c4.apps.googleusercontent.com",
+          "client_id": "877044322181-g3t1r6lrn9mhlq7pob9emcs7ljrej2nd.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDMnH4Xy5w1NEvsHbLGErIOPJkBom04E-A"
+          "current_key": "AIzaSyACY5aYDOBUreFvkdyahnWsoewdJTkj1qk"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "360092683490-m84rq6bm9cjk85e7sbjrba9778vao5c4.apps.googleusercontent.com",
+              "client_id": "877044322181-g3t1r6lrn9mhlq7pob9emcs7ljrej2nd.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

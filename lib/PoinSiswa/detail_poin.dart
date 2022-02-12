@@ -155,7 +155,7 @@ class _detail_poinState extends State<detail_poin> {
           ),
           new MaterialButton(
             onPressed: (){
-              Navigator.push(context, MaterialPageRoute(builder: (context) => poin_siswa_detail() ));
+              //Navigator.push(context, MaterialPageRoute(builder: (context) => poin_siswa_detail() ));
             }, child: Text("Back To List"),
             color: Colors.orange,
             textColor: Colors.white,

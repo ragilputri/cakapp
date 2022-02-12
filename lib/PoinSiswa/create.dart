@@ -1,3 +1,4 @@
+import 'package:cakapp/PoinSiswa/details.dart';
 import 'package:cakapp/PoinSiswa/index.dart';
 import 'package:flutter/material.dart';
 import 'package:cakapp/shared/navbk.dart';
@@ -79,14 +80,14 @@ class _add_poinState extends State<add_poin> {
                 children: [
                   new MaterialButton(
                     onPressed: (){
-                      Navigator.push(context, MaterialPageRoute(builder: (context) => poin_siswa() ));
+                      //Navigator.push(context, MaterialPageRoute(builder: (context) => poin_siswa_detail() ));
                     }, child: Text("Back To List"),
                     color: Colors.orange,
                     textColor: Colors.white,
                   ),
                   new MaterialButton(
                     onPressed: (){
-                      Navigator.push(context, MaterialPageRoute(builder: (context) => poin_siswa() ));
+                      //Navigator.push(context, MaterialPageRoute(builder: (context) => poin_siswa_detail() ));
                     }, child: Text("Save"),
                     color: Colors.red,
                     textColor: Colors.white,
